@@ -1,9 +1,21 @@
 .content{
     max-width: 600px;
     text-align: center;
-    margin-left: 300px;
+    margin: 0 auto;
+    border: 1px;
+    border-color: #333;
+    border-style: dashed;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 150px;
+    padding-right: 150px;
+    /* margin-left: 300px;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 100px; */
+}
+
+body{
+    margin: 100px;
 }
 
 h1{
@@ -19,11 +31,17 @@ h2{
     color: #006EB6;
     font-size: 17px;
     /* line-height: 1.5; */
-    margin-bottom: 50px;
-    text-decoration:dotted;
+    margin-bottom: 50px; 
+    border-bottom: 1px dashed;
 }
 .dark h2{
     color: #9fd7fd;
+    border-bottom: 1px dashed;
+    
+}
+
+.dark .content{
+    border-color: white;
 }
 
 .logo{
