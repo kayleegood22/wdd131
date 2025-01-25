@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+:root {
+--primary-color: #52489c;
+--secondary-color: #59c3c3;
+--accent-color: #f45b69;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: Mooli, san-serif;
+}
+
+header {
+    padding: 25px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+}
+
+h1{
+    font-size: 35px;
+    margin: 0 auto;
+}
+
+h1, h3, button{
+    font-family: var(--primary-font);
+}
+
+main {
+    margin: 0 auto;
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    text-align: center;
+  }
+  a:link,
+  a:visited {
+    color: var(--accent-color);
+  }
+
+img {
+	max-width: 100%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5); 
+}
+
+button {
+    background-color: transparent;
+    border-width: 0;
+    color: var(--text-light);
+    font-family: inherit;
+    font-size: 1.5em;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    padding: 0;
+    margin: 0 auto;
+}
+
+nav{
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    nav {
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    button {
+        display: none;
+    }
+
+    nav {
+        display: grid;
+    }
+  }
