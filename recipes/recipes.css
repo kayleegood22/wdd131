@@ -25,9 +25,9 @@ h1 {
     font-size: 3em;
 }
 
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 body {
     font-family: var(--secondary-font);
@@ -40,16 +40,99 @@ body {
     input {
         width: 100%;
     }
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .recipe {
     display: flex;
     flex-direction: column;
     border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
     .recipe-img {
-        height: 50%;
+        height: 30%;
+    }
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+img {
+    max-width: 100%;
+}
+
+.recipe-desc {
+    display:none;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    margin-top: -15px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 100px;
+    justify-content: center;
+    align-content: space-around;
+    img {
+        width: 50px;
+
     }
 }
 
+.tag {
+    font-size: 1.4rem;
+    border: 2px solid #333;
+    padding: 4px;
+    font-family: var(--primary-font);
+    
+}
+
+.tag-row {
+    margin-top: 15px;
+}
+
+.recipe-title {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.rating {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
 /* media query for large screen */
+@media screen and (min-width: 600px) {
+    .recipe {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .recipe img {
+        max-width: 50%; /* Image takes up 50% of the space */
+    }
+
+    .recipe-text {
+        margin-left: 20px;
+        width: 50%; /* Text takes the remaining 50% of the space */
+        display: flex;
+        flex-direction: column; /* Stack text elements vertically */
+    }
+    .recipe-desc {
+        display:contents;
+    }
+    .social {
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+    @media screen and (max-width: 960px) {
+        
+    }
+}
+
 
