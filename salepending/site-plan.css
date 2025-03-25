@@ -114,7 +114,7 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-  font-family: var(--paragraph-font);
+  font-family: var(--heading-font);
 }
 nav {
   list-style-type: none;
