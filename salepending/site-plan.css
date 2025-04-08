@@ -34,9 +34,10 @@ Fonts are separated by a | */
 
 body {
 
-  max-width: 1200px;
+  
   margin: 0 auto;
   padding: 4em;
+  padding-top: 0em;
   font-size: 18px;
   background-color:#0c0b07;
 }
@@ -63,6 +64,7 @@ hr {
 }
 header {
   padding: 1em;
+  padding-top: 0em;
   text-align: center;
   color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
@@ -115,16 +117,25 @@ nav {
   text-align: center;
   font-size: 1.2em;
   font-family: var(--heading-font);
+  margin-bottom: 75px;
 }
 nav {
   list-style-type: none;
   display: flex;
+  justify-content: flex-start;
+  background-color: var(--nav-background-color);
+  font-size: 1.2em;
+  font-family: var(--heading-font);
 }
 nav a {
-  padding: 1em;
-  min-width: 120px;
+  flex: 1;
+  text-align: center;
+  padding: 0.1em;
+  min-width: 100px;
   text-decoration: none;
-  padding: 10px;
+  font-size: 0.8em;
+  color: var(--nav-link-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 nav a:link,
 nav a:visited {
@@ -186,3 +197,57 @@ nav a:hover {
 main, p {
     color: var(--accent2-color);
 }
+
+.logo {
+  margin: 0 auto;
+  width: 150px;
+  margin-top: 0px;
+}
+
+.contact_body {
+  background: url('pictures/the_venue.jpeg') no-repeat center center/cover;
+}
+
+button {
+  padding: 10px;
+  color: var(--primary-color);
+  background-color: var(--accent2-color);
+  border-radius: 20px;
+}
+
+main {
+  max-width: 1200px;
+}
+
+.Spotify {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.gallery {
+  grid-column: 2/3;
+  grid-row:1/3;
+  
+}
+
+.spotify_button {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  font-size: 1em;
+  padding: 15px;
+  font-family: var(--heading-font)
+  
+}
+
+.spotify_paragraph {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.gallery_pic {
+  width: 20em;
+}
+
+
+
