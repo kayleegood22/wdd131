@@ -3,3 +3,5 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     document.getElementById("responseMessage").style.display = "block";
     this.reset();
 });
+
+  
