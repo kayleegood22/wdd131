@@ -438,26 +438,87 @@ footer {
 
 @media screen and (max-width: 960px) {
   body {
-      max-width: 960px;
+      padding: 1em;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1em;
+  }
+
+  nav a {
+    padding: 0.5em 1em;
+    font-size: 1em;
   }
   .about {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_pic {
+    width: 90%;
+    margin: 1em 0;
   }
   .about_info {
-    flex-wrap: wrap;
+    margin-left: 0;
+    padding: 0 1em;
+    text-align: center;
+  }
+  .about_title {
+    font-size: 3rem;
+    text-align: center;
   }
   .about_para_2 {
     margin-top: 50px; 
   }
   .Spotify {
     display:flex;
-    flex-wrap: wrap
-
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+  }
+  .headline_title {
+    font-size: 3rem;
+    text-align: center;
   }
   .spotify_button {
+    width: auto;
+    font-size: 1em;
+    margin-top: 1em;
+    align-self: center;
     margin-bottom: 100px;
   }
+  .slideshow-container {
+    width: 90%;
+    margin: 1em auto;
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .contact_title {
+    font-size: 3rem;
+  }
+
+  .contact_para {
+    padding: 0 1em;
+    font-size: 1.2rem;
+  }
+
+  .submit_button {
+    width: 80%;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
 }
 
